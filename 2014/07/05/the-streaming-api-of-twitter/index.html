@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>the streaming api of twitter | stamaimer</title>
+  <meta name="description" content="被忘卻的人" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="stamaimer">
+  <script src="http://static.duoshuo.com/embed.js"></script>
+  
+  
+  
+
+  
+
+</head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/07/05/the-streaming-api-of-twitter/">the streaming api of twitter</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/01/11/hiahia/">hiahia</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2014/01/03/something-about-function-call/">Something about Function Call</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/28/如果蚕豆会说话/">如果蚕豆会说话</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/26/advertisements-of-phones/">Advertisements of Phones</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/23/the-usages-of-const-in-cc++/">The Usages of const in C/C++</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/23/constant-in-cc++/">Constant in C/C++</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/20/the-usages-of-static-in-c-and-c++/">The Usages of static in C and C++</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/20/the-comparison-of-important-keywords-between-c-and-c++/">The Comparison of Important Keywords between C and C++</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/18/tweeting-bra/">Tweeting Bra</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/18/products-from-fiftythree/">Paper, Pencil and Book from Fiftythree</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/18/amazon-prime-air/">Amazon Prime Air</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/13/由前置声明说起/">由前置声明说起</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/13/link--fatal-error-link1104-无法打开文件&#39;libextensionslib&#39;/">LINK : fatal error LINK1104: 无法打开文件&quot;libExtensions.lib&quot;</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2013/12/11/hello-world/">Hello World</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/C++/">&nbsp;&nbsp;&nbsp;C++</a>
+                                    <small>6</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/amazon/">&nbsp;&nbsp;&nbsp;amazon</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/cocos2d-x/">&nbsp;&nbsp;&nbsp;cocos2d-x</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/fitness/">&nbsp;&nbsp;&nbsp;fitness</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/funny/">&nbsp;&nbsp;&nbsp;funny</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/life/">&nbsp;&nbsp;&nbsp;life</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/python/">&nbsp;&nbsp;&nbsp;python</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/tech/">&nbsp;&nbsp;&nbsp;tech</a>
+                                    <small>1</small>
+                                </li>
+                                
+                                <li class="search-tag-li mp-pjax">
+                                    <a href="/tags/video/">&nbsp;&nbsp;&nbsp;video</a>
+                                    <small>4</small>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2014/07/05/the-streaming-api-of-twitter/">the streaming api of twitter</a>
+                
+                    <a  data-pjax href="/2014/01/11/hiahia/">hiahia</a>
+                
+                    <a  data-pjax href="/2014/01/03/something-about-function-call/">Something about Function Call</a>
+                
+                    <a  data-pjax href="/2013/12/28/如果蚕豆会说话/">如果蚕豆会说话</a>
+                
+                    <a  data-pjax href="/2013/12/26/advertisements-of-phones/">Advertisements of Phones</a>
+                
+                    <a  data-pjax href="/2013/12/23/the-usages-of-const-in-cc++/">The Usages of const in C/C++</a>
+                
+                    <a  data-pjax href="/2013/12/23/constant-in-cc++/">Constant in C/C++</a>
+                
+                    <a  data-pjax href="/2013/12/20/the-usages-of-static-in-c-and-c++/">The Usages of static in C and C++</a>
+                
+                    <a  data-pjax href="/2013/12/20/the-comparison-of-important-keywords-between-c-and-c++/">The Comparison of Important Keywords between C and C++</a>
+                
+                    <a  data-pjax href="/2013/12/18/tweeting-bra/">Tweeting Bra</a>
+                
+                    <a  data-pjax href="/2013/12/18/products-from-fiftythree/">Paper, Pencil and Book from Fiftythree</a>
+                
+                    <a  data-pjax href="/2013/12/18/amazon-prime-air/">Amazon Prime Air</a>
+                
+                    <a  data-pjax href="/2013/12/13/由前置声明说起/">由前置声明说起</a>
+                
+                    <a  data-pjax href="/2013/12/13/link--fatal-error-link1104-无法打开文件&#39;libextensionslib&#39;/">LINK : fatal error LINK1104: 无法打开文件&quot;libExtensions.lib&quot;</a>
+                
+                    <a  data-pjax href="/2013/12/11/hello-world/">Hello World</a>
+                
+                
+                
+                    <a data-pjax href="/tags/C++/">&nbsp;&nbsp;C++</a>
+                
+                    <a data-pjax href="/tags/amazon/">&nbsp;&nbsp;amazon</a>
+                
+                    <a data-pjax href="/tags/cocos2d-x/">&nbsp;&nbsp;cocos2d-x</a>
+                
+                    <a data-pjax href="/tags/fitness/">&nbsp;&nbsp;fitness</a>
+                
+                    <a data-pjax href="/tags/funny/">&nbsp;&nbsp;funny</a>
+                
+                    <a data-pjax href="/tags/life/">&nbsp;&nbsp;life</a>
+                
+                    <a data-pjax href="/tags/python/">&nbsp;&nbsp;python</a>
+                
+                    <a data-pjax href="/tags/tech/">&nbsp;&nbsp;tech</a>
+                
+                    <a data-pjax href="/tags/video/">&nbsp;&nbsp;video</a>
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">stamaimer</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">the streaming api of twitter</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
+
+            <div class="scroller">
+            <div class="scroller-inner">
+
+
+<!-- -->
+<!--<body class="post-template">-->
+<!---->
+  
+
+<main class="content" role="main">
+    <article class="post" >
+    <span class="post-meta">
+                  <div class="tag-tile">
+                      
+                      
+                      <a data-pjax href='/tags/python/' style='color:#D5D5D5'>python</a>
+                      
+                      
+                  </div>
+                <h1 class="post-title" style="margin: 14px 0;color:#50585D">the streaming api of twitter</h1>
+
+                    <div class="post-meta">
+                        Post on<span class="fa fa-clock-o"></span>
+                        <time datetime="2014-07-05T12:38:12.000Z"
+                              itemprop="datePublished">Jul 5 2014</time>
+                    </div>
+    </span>
+
+        <section class="post-content">
+            <p>we are doing some research about people’s attitude to <code>Confucius Institute</code>. we need crawl lots of tweets which contains <code>Confucius Institute</code> from twiter. twitter provide <code>streaming api</code> for this purpose. in this article, we will introduce how to use streaming api to crawl tweets which you want.</p>
+<a id="more"></a>
+
+<p>there are three streaming endpoints provided : <code>public streams</code>, <code>user streams</code>, <code>site streams</code>.<br>in this sence, we choose <code>public streams</code>. there are there endpoints below <code>public streams</code> : <code>POST statuses/filter</code>, <code>GET statuses/sample</code>, <code>GET statuses/firehose</code>. we choose <code>POST statuses/filter</code>, because we want to crawl the tweets which contains keyword.</p>
+<p>the request send to twitter must be authorized according to the OAuth specification. the process of authorizing is a trouble in my try. so, we will introduce this process in detail.</p>
+<p>the first thing of authorizing is collect parameters. there are seven parameters need to be colleted.</p>
+<ul>
+<li>oauth_consumer_key : this is the API key of your application. before you get it, you should sign up and create a application in twitter.</li>
+<li><p>oauth<em>nonce : this is a unique token your application should generate for each unique request.the value is generated by base64 encoding 32 bytes of random data, and stripping out all non-word characters. in python, we can make it use follow codes:<br><figure class="highlight python"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">def</span> <span class="title">gen_nonce</span><span class="params">()</span>:</span>
+	<span class="keyword">return</span> re.sub(<span class="string">'[\W_]'</span>, <span class="string">''</span>, base64.b64encode(os.urandom(<span class="number">32</span>)))
+</pre></td></tr></table></figure><br><code>os.urandom(32)</code> generate 32 bytes random string<br><code>base64.b64encode(str)</code> encode the str in base64<br>`re.sub(‘[\W</em>]’, ‘’, str)`replace the non-word characters in str with ‘’<br>‘[\W_]’is the regex stands the non-word characters</p>
+</li>
+<li><p>oauth_signature_method : in twitter, the value of this parameter is <code>HMAC-SHA1</code></p>
+</li>
+<li><p>oauth_timestamp : the timestamp that the requests made. in python, we can make it use follow codes:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="function"><span class="keyword">def</span> <span class="title">timestamp</span><span class="params">()</span>:</span>
+	<span class="keyword">return</span> str(int(time.time()))
+</pre></td></tr></table></figure>
+</li>
+<li><p>oauth_token : you can generate a valid token for your account on the API key tab of your application page.</p>
+</li>
+<li><p>oauth_version : the value of this parameter is fixed, that’s is <code>1.0</code></p>
+</li>
+<li><p>oauth_signature : this is the most difficult to generate. so we put this in the last</p>
+<p>  to generate signature of each request, you should as follows:</p>
+<p>  1.collect request method and url<br>  2.collect parameters</p>
+<p>  the parameters include oauth_consumer_key, oauth_nonce, oauth_signature_method, oauth_timestamp, oauth_token, oauth_version and the payload of the request.</p>
+<ul>
+<li>first, we should percent encode the key-value pairs. in python, you can use this statement to do percent encode : <code>urllib.quote(str2encode, &#39;&#39;)</code>.</li>
+<li>second, we should concatenate these key-value pairs in alphabetically sequnence. in python, you can make a dist with these key-value pairs, and sorted it, concatenate it. this str clalled parameter str.</li>
+<li>third, constuct base string. append the request method and base url delimited by ‘&amp;’, and append the parameter str that have been percent encoded again.</li>
+<li>forth, get the signing key. the signing key is combined by consumer_secret and token_secret delimited by ‘&amp;’</li>
+<li>fifth, use hmac-sha1 to generate the signature. in python, do as follows : <code>hmac.new(signkey, basestr, hashlib.sha1).digest()</code>, after that, you should decode the iutput : <code>binascii.b2a_base64(digest)[:-1]</code></li>
+</ul>
+</li>
+</ul>
+<p>it’s almost finished. constuct the header string follow the rules, it’s easy, so i dont note it. </p>
+<p>i recommand you send the request with the <code>requests</code>, a network lib for human.</p>
+
+        </section>
+        <hr/>
+        <nav class="pagination" style="width:auto" role="pagination">
+            
+            <a style="cursor:default" class="newer-posts" href="#">This is the First Post</a>
+            
+            <a class="share-button" data-original-title title>Share this Post</a>
+            
+            <a data-pjax class="older-posts" href="/2014/01/11/hiahia/">Next Post →</a>
+            
+        </nav>
+        <br/>
+        <br/>
+        <section id="comment">
+            <div id="comment-box"></div>
+        </section>
+
+
+    </article>
+</main>
+
+
+  
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; stamaimer 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
+    </div>
+</footer>
+</div>
+</div><!-- /scroller -->
+
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
+  
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
+</script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+
+<script type="text/javascript">
+    var disqus_shortname = 'stamaimer';
+
+    (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+</body>
+</html>
